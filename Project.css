@@ -89,6 +89,19 @@ ul{
     margin-top: 16px;
 }
 
+.header-two{
+    color: var(--header-primary-color);
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: -0.008em;
+    line-height: 48px;
+}
+
+.header-two-a{
+    margin-top: 24px;
+    text-align: center;
+}
+
 strong{
     color: #0d9dda;
 }
