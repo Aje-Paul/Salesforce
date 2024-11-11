@@ -394,6 +394,12 @@ form {
   margin-right: 3px;
 }
 
+@media (max-width:767px) {
+  .first{
+    display: block;
+  }
+}
+/* 
 @media screen and (max-width: 631px) {
   .first {
     display: flex;
@@ -446,3 +452,4 @@ form {
     margin-bottom: 30px;
   }
 }
+ */
