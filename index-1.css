@@ -398,6 +398,25 @@ form {
   .first{
     display: block;
   }
+
+  #section2{
+    margin: 0 auto;
+    padding: 10px 10px;
+  }
+
+  .container3{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .links{
+    padding: 0;
+}
+
+.links ul{
+    display: block;
+    padding: 0;
+}
 }
 /* 
 @media screen and (max-width: 631px) {
