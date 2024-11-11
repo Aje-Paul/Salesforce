@@ -8,7 +8,12 @@
 }
 
 
+
+
+html,
 body{
+    width: 100vw;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -18,13 +23,107 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
     color: var(--header-primary-color);
 }
 
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px 20px 10px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 20000;
+    height: 20px;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right{
+   margin-right: 150px;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-us, .search-icon, .world-globe, .login, .try-free-button {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.try-free-button {
+    background-color: #2e844a;
+    border: #2e844a solid 2px;
+    border-radius: 4px;
+    line-height: var(--button-line-height);
+    padding: 6px 18px 6px 16px;
+}
+
+.try-free-button a{
+    color: #ffffff;
+   font-size: 16px;
+   font-weight: 700;
+   text-decoration: none;
+}
+.try-free-button:hover{
+   background-color: #1c3326;
+}
+
+/* Search Dropdown */
+.search-dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.search-dropdown input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.close-search {
+    cursor: pointer;
+    color: #0070d2;
+    font-weight: bold;
+    display: block;
+    text-align: right;
+}
+
+
 .global-nav{
     position: fixed;
     top: 0px;
     width: 100%;
     background-color: rgb(255, 255, 255);
     z-index: 20000;
-   
 }
 
 ul{
@@ -100,12 +199,37 @@ ul{
 .header-two-a{
     margin-top: 24px;
     text-align: center;
+    font-size: 18px;
+    letter-spacing: -.0012em;
+    line-height: 28px;
+    color: #181818;
+}
+
+.header-three{
+    color: var(--header-primary-color);
+    font-size: 48px;
+    letter-spacing: -0.01em;
+    line-height: 56px;
+    text-align: center;
 }
 
 strong{
     color: #0d9dda;
 }
 
+a{
+    color: #0B5CAB;
+}
+
+.CP{
+    font-size: 18px;
+    letter-spacing: -.0012em;
+    line-height: 28px;
+    margin-bottom: 32px;
+    margin-top: 16px;
+    color: var(--text-color);
+    width: 450px;
+}
 
 .button1{
    line-height: var(--button-line-height);
@@ -155,6 +279,43 @@ strong{
     top: 0;
     width: 100%;
     z-index: -3;
+}
+
+.right-top{
+    margin-bottom: 48px;
+}
+
+.right-top p{
+    color: var(--text-color);
+    font-size: 18px;
+    letter-spacing: -.0012em;
+    line-height: 28px;
+    margin-bottom: 0;
+    margin-top: 16px;
+    width: 450px;
+}
+
+.integrate{
+    padding-top: 24px;
+}
+
+.integrate-description{
+    margin-left: 56px;
+    margin-right: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.integrate-description p{
+    color: var(--text-color);
+    font-size: 18px;
+    letter-spacing: -.0012em;
+    line-height: 28px;
+    margin-bottom: 0;
+    margin-top: 16px;
+    width: 630px;
+    text-align: center;
 }
 
 
@@ -235,7 +396,7 @@ strong{
 }
 
 .card-background{
-     align-items: center;
+ align-items: center;
      max-width: 1200px;
      max-height: 400px;
      top: 0;
@@ -292,12 +453,23 @@ strong{
     width: 100%;
 }
 
+.box-header{
+    color: var(--header-primary-color);
+    font-size: 40px;
+    letter-spacing: -0.008em;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 .box-container {
     display: flex;
     flex-wrap: wrap;/* Allows the boxes to wrap to the next line if needed */
     gap: 24px; /* Adds space between the boxes */
     justify-content: center; /* Centers the boxes horizontally */
-    width: 100%
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .box-text-wrapper{
@@ -350,6 +522,9 @@ strong{
     justify-content: center;
     align-items: center;
     margin-top: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 40px;
 }
 
 .box-wrapper1 {
@@ -1029,18 +1204,37 @@ strong{
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-  }
-  .icon-cpra {
+}
+
+.icon-cpra {
     background-image: url(icon-cpra.svg);
     background-repeat: no-repeat;
     background-size: contain;
     height: 15px;
     width: 30px;
     margin-right: 3px;
-  }
+}
   
+@media (max-width:767px) {
+    button{
+        width: 100%;
+    }
 
+    .header-button button{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    }
 
+    .container2{
+        display: ;
+    }
+}
+
+@media (max-width:1022px) {
+    .top-footer{
+        display: none;
+    }
+}
 
 
 

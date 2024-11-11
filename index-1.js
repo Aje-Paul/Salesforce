@@ -13,18 +13,19 @@ nextBtn1.addEventListener("click", function () {
   form2.style.display = "block";
 });
 backBtn1.addEventListener("click", function () {
+  e.preventDefault();
   form2.style.display = "none";
   form1.style.display = "block";
 });
-nextBtn2.addEventListener("click", function (w) {
-  w.preventDefault();
+backBtn2.addEventListener("click", function (e) {
+  e.preventDefault();
+  form3.style.display = "none";
+  form2.style.display = "block";
+});
+nextBtn2.addEventListener("click", function (e) {
+  e.preventDefault();
   form2.style.display = "none";
   form3.style.display = "block";
-});
-backBtn2.addEventListener("click", function () {
-  form2.style.display = "block";
-  form1.style.display = "none";
-  form3.style.display = "none";
 });
 www.addEventListener("click", function (e) {
   if (item.style.display === "none") {
