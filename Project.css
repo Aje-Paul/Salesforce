@@ -1226,7 +1226,12 @@ a{
     }
 
     .container2{
-        display: ;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .cards-generic{
+        width: 300px;
     }
 }
 
