@@ -404,6 +404,10 @@ form {
     padding: 10px 10px;
   }
 
+  #form1 h3{
+    width: 500px;
+  }
+
   .container3{
     display: block;
     margin: 0 auto;
@@ -416,6 +420,10 @@ form {
 .links ul{
     display: block;
     padding: 0;
+}
+
+#www {
+  margin-bottom: 30px;
 }
 }
 /* 
@@ -467,8 +475,6 @@ form {
   .links ul li {
     text-wrap: nowrap;
   }
-  #www {
-    margin-bottom: 30px;
-  }
+ 
 }
  */
