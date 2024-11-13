@@ -408,6 +408,18 @@ form {
     width: 500px;
   }
 
+  #form1 p{
+    width: 500px;
+  }
+
+  .checkbox{
+    width: 500px;
+  }
+
+  .imgs{
+    display: block;
+  }
+
   .container3{
     display: block;
     margin: 0 auto;
